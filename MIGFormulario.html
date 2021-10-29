@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MIGFormulario</title>
+		<style type="text/css">
+			td{
+				
+				background: #8EFFE8;
+			}
+
+			th{
+				color:red;
+				backgro ;
+				border: red;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+			<table border="1">
+													  <tr ><th colspan="2">User Form</th></tr>
+	      
+				 <tr><td><label for="nombre">Enter Name</label></td><td><input type="text" name="nombre" id="nombre"></td></tr>
+				 <tr><td><label for="contra">Enter Password</label></td><td><input type="password" name="nombre" id="contra"></td></tr>
+				 <tr><td><label for="direc">Enter Address</label></td><td><input type="textarea" name="nombre" id="direc"></td></tr>
+				 <tr>
+					 <td><label for="Juego">Select Game</label></td><td>
+					 <input type="checkbox" name="deportes[]" id="Juego" value="Hockey">Hockey<br>
+					 <input type="checkbox" name="deportes[]" id="Juego" value="Futbol"> Futbol<br>
+					 <input type="checkbox" name="deportes[]" id="Juego" value="Baloncesto"> Baloncest<br>
+					 <input type="checkbox" name="deportes[]" id="Juego" value="Rugby" > Rugby<br>
+					 <input type="checkbox" name="deportes[]" id="Juego" value="Tenis" >Tenis<br>
+					 <input type="checkbox" name="deportes[]" id="Juego" value="Boxeo">Boxeo<br></td></tr>
+
+				 <tr><td>Gender</td>
+				 <td><input type="radio" name="sexo" id="mujer"><label for="mujer">Mujer</label>
+				 <input type="radio" name="sexo" id="hombre"><label for="hombre">Hombre</label></td></tr>
+
+				 <tr>
+				 	<td><label for="edad">select ur age</label></td>
+				 	<td>
+				 		<select>
+					 		<option value="edad">Select</option>
+					 		<option value="edad"><18</option>
+					 		<option value="edad">+18</option>
+				 		</select>
+				 	</td>
+				 </tr>
+				 <tr><td colspan="2"><input type="file" name="examinar" ></td></tr>
+
+				  <tr><td colspan="2"><input type="button" ><input type="reset"><input type="submit">
+				  		  
+				  	  </td>
+				  </tr>			
+			
+		</form>
+
+	</body>
+</html>
+
+
+
